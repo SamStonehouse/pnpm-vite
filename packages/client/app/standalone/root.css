@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+html,
+body,
+#root,
+#root-1 {
+  height: 100vh;
+  overflow: hidden;
+
+  --card-width: 80px;
+  --card-size-ratio: 0.71591;
+  --card-height: calc(var(--card-width) / var(--card-size-ratio));
+  --card-spacing: 8px;
+  --zone-padding: 8px;
+  --zone-spacing: 8px;
+}
+
+html {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+}
+
+#root,
+#root-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 40px;
+}
+
+body {
+  display: flex;
+}
+
+#app-1,
+#app-2 {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  border: 1px solid red;
+}
+
+#sync-root {
+  flex: 0 1 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#modal-root,
+#modal-root-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}

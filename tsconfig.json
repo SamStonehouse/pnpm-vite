@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": { "classnameTransform": "camelCaseOnly" }
+      }
+    ],
+    "skipLibCheck": true
+  },
+  "references": [{ "path": "./tsconfig.vite.json" }]
+}
